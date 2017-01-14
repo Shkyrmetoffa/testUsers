@@ -2,6 +2,6 @@
 <div class='ng-block' *ngFor="let user of users" [routerLink]="['/users', user.id, 'posts']">
   <span class="name">{{user.name}}</span>
   <a class="ng-phone" href="tel: {{user.phone}}">{{user.phone}}</a>
-  <a class="ng-email" href="">{{user.email}}</a>
+  <a class="ng-email" href="mailto:">{{user.email}}</a>
 </div>
 </div>
