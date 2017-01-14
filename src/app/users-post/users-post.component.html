@@ -1,0 +1,6 @@
+<div *ngFor="let post of posts" [routerLink]="['/posts', post.id, 'comments']">
+<!--<h3>Test from<span>{{user.name}}</span><a href="">{{user.email}}</a></h3>-->
+<div>{{post.id}}</div>
+  <div>{{post.title}}</div>
+   <div>{{post.body}}</div>
+</div>
