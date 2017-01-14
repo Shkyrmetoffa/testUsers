@@ -1,4 +1,7 @@
-<div *ngFor="let comment of comments">
-  <div>{{comment | json}}</div>
-   <div>{{comment.body}}</div>
+<div class="wrapper">
+<div class='ng-block' *ngFor="let comment of comments">
+  <div class="name">{{comment.name}}</div>
+   <div class="content">{{comment.body}}</div>
+   <a href="">{{comment.email}}</a>
+</div>
 </div>

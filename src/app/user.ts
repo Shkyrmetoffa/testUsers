@@ -5,6 +5,7 @@ export type User = {
 }
 export class Posts {
     posts: string;
+    name: string;
 }
 export type Comments = {
    comments: string;
