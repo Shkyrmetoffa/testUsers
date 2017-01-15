@@ -1,7 +1,7 @@
-<div class="wrapper">
-<div class='ng-block' *ngFor="let user of users" [routerLink]="['/users', user.id, 'posts']">
-  <span class="name">{{user.name}}</span>
-  <a class="ng-phone" href="tel: {{user.phone}}">{{user.phone}}</a>
-  <a class="ng-email" href="mailto:">{{user.email}}</a>
+<div class="list-group">
+<div class='list-group-item list-group-item-action flex-column align-items-start' *ngFor="let user of users">
+  <h5 class="mb-1" [routerLink]="['/users', user.id, 'posts']">{{user.name}}</h5>
+  <a href="tel: {{user.phone}}"><span class="icon-phone"></span> {{user.phone}}</a>
+  <a href="mailto: {{user.email}}"><span class="icon-envelop"></span> {{user.email}}</a>
 </div>
 </div>

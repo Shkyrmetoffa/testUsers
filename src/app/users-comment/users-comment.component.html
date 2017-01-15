@@ -1,7 +1,7 @@
-<div class="wrapper">
-<div class='ng-block' *ngFor="let comment of comments">
-  <div class="name">{{comment.name}}</div>
+<div class="list-group">
+<div class='list-group-item list-group-item-action flex-column align-items-start' *ngFor="let comment of comments">
+ <h5 class="mb-1">{{comment.name}}</h5>
    <div class="content">{{comment.body}}</div>
-   <a href="mailto:">{{comment.email}}</a>
+   <a href="mailto: {{comment.email}}"><span class="icon-envelop"></span> {{comment.email}}</a>
 </div>
 </div>
